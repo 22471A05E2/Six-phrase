@@ -1,0 +1,14 @@
+50. Define a class named American and its subclass NewYorker.
+
+class American():
+    pass
+class NewYorker(American):
+    pass
+american = American()
+newyorker = NewYorker()
+print(american)
+print(newyorker)
+
+Output:
+<__main__.American object at 0x000002377BDFF290>
+<__main__.NewYorker object at 0x000002377C310650>

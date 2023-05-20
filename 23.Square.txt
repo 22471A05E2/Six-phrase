@@ -1,0 +1,9 @@
+23. Write a method which can calculate square value of number
+
+n = int(input())
+square = n * n
+print(square)
+
+Output:
+5 
+25

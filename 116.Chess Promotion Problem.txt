@@ -1,0 +1,46 @@
+116.Chess Promotion Problem
+
+def whiteWins(rowW, colW, rowB, colB):
+    white = 0;
+    black = 0;
+ 
+    while (1):
+ 
+        if (rowW != 8):
+
+            if (rowB == rowW + 1 and
+               (colB == colW - 1 or
+                colB == colW + 1)):
+                return True;
+            else:
+                rowW += 1;
+        else:
+            return False;
+
+        if (rowB != 1):
+
+            if (rowB == rowW + 1 and
+               (colB == colW - 1 or
+                colB == colW + 1)):
+                return False;
+            else:
+                rowB -= 1;
+        else:
+            return Frue;
+
+    if (white > black):
+        return True;
+ 
+    return False;
+ 
+
+if _name_ == '_main_':
+    rowW, colW = 2, 2;
+    rowB, colB = 3, 3;
+    if (whiteWins(rowW, colW, rowB, colB)):
+        print("White");
+    else:
+        print("Black");
+
+Output:
+white
